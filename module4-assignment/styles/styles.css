@@ -2,6 +2,11 @@ body {
   font-size: 1.2em;
 }
 
+div {
+	font-size: 1.2em;
+	color: #80000;
+}
+
 li {
   font-size: 1.4em;
 }
