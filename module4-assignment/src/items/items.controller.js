@@ -9,8 +9,6 @@
   function ItemsListController (items) {
       var itemlist = this;
       itemlist.items = items.menu_items;
-     
-
-    }
+  }
 
 }) ();

@@ -9,21 +9,22 @@
         var service = this;
 
         service.getAllCategories = function() {
-          return $http.get(ApiBasePath + '/categories.json')
-                      .then(function(response) {
-                         return response.data;
-                    });
-
+          var response = $http({
+            method: "GET",
+            url: (ApiBasePath + "/categories.json")
+          });
+          return response;
         };
-
 
         service.getItemsForCategory = function (categoryShortName) {
-            return $http.get (ApiBasePath + '/menu_items.json?category=' + categoryShortName)
-                        .then (function(response) {
-                            return response.data;
-                        });
+          var response = $http({
+            method: "GET",
+            url: (ApiBasePath + "/menu_items.json?category=" + categoryShortName),
+            params: {
+              category: categoryShortName
+            }
+          });
+          return response;
         };
-          
-    }
-
+  }
 })();
