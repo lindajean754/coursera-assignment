@@ -7,8 +7,8 @@
 
   ItemsListController.$inject = ['items']
   function ItemsListController (items) {
-      var itemlist = this;
-      itemlist.items = items.menu_items;
+      var ilist = this;
+      ilist.items = items.menu_items;
   }
 
 }) ();

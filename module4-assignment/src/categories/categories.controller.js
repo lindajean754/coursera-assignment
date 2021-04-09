@@ -6,8 +6,8 @@
 
     CategoriesListController.$inject = ['categories']
     function CategoriesListController (categories) {
-        var catlist = this;
-        catlist.categories = categories;
+        var clist = this;
+        clist.categories = categories;
               
     }
 

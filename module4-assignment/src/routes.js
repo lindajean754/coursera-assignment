@@ -18,9 +18,9 @@
         })
 
         .state('categories', {
-            url: '/categories',
+            url: '/categories/{category.name}',
             templateUrl: 'src/templates/maincategories.template.html',
-            controller: 'CategoriesListController as catlist',
+            controller: 'CategoriesListController as clist',
             resolve: {
                 categories: ['MenuDataService', function (MenuDataService) {
                         return MenuDataService.getAllCategories();
@@ -31,7 +31,7 @@
         .state('items', {
             url: '/items/{categoryShortName}',
             templateUrl: 'src/templates/mainitems.template.html',
-            controller: 'ItemsListController as itemlist',
+            controller: 'ItemsListController as ilist',
             resolve: {
                 items: ['$stateParams', 'MenuDataService',  function ($stateParams, MenuDataService) {
                         return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
