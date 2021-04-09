@@ -4,7 +4,7 @@ body {
 
 div {
 	font-size: 1.2em;
-	font-color: #80000;
+	font-color: #800000;
 }
 
 li {
@@ -14,6 +14,19 @@ li {
 .category:hover {
   display: inline-block;
   cursor: pointer;
-  background-color: blue;
+  background-color: #800000;
   color: white;
+}
+
+.button {
+  background-color: #ffe4c4;
+  border: none;
+  color: #800000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
